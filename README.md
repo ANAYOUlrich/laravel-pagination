@@ -1,8 +1,5 @@
-Voici la version corrigée et améliorée de votre texte :
-
----
-
 # Personnalisation de la pagination dans Laravel
+---
 
 ## Style 1
 Voici une illustration de mon projet :
