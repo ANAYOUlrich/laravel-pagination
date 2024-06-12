@@ -50,9 +50,9 @@
                             <option value="10" {{ request('ligne') == 10 ? 'selected' : '' }}>10</option>
                             <option value="25" {{ request('ligne') == 25 ? 'selected' : '' }}>25</option>
                             <option value="50" {{ request('ligne') == 50 ? 'selected' : '' }}>50</option>
-                            <option value="100" {{ request('ligne') == 100 ? 'selected' : '' }}>50</option>
-                            <option value="250" {{ request('ligne') == 250 ? 'selected' : '' }}>50</option>
-                            <option value="500" {{ request('ligne') == 500 ? 'selected' : '' }}>50</option>
+                            <option value="100" {{ request('ligne') == 100 ? 'selected' : '' }}>100</option>
+                            <option value="250" {{ request('ligne') == 250 ? 'selected' : '' }}>250</option>
+                            <option value="500" {{ request('ligne') == 500 ? 'selected' : '' }}>500</option>
                         </select>
 
                         {{-- <input type="number" name="ligne" min="0" max="{{ $paginator->total() }}"
