@@ -1,12 +1,11 @@
 # Personnalisation de la pagination dans Laravel
----
 
 ## Style 1
 Voici une illustration de mon projet :
 
 ![Template de personnalisation de la pagination Laravel avec Bootstrap 5](./Style1/image1.png)
 
-## Installation && Utilisation
+## Installation & Utilisation
 Pour personnaliser les vues de pagination, vous devez les exporter vers votre répertoire `resources/views/vendor` en utilisant la commande `vendor:publish` :
 
 ```shell
@@ -40,8 +39,8 @@ Ensuite, vous pouvez simplement téléverser le fichier `custom-bootstrap-5` et 
 
 Dans votre contrôleur, voici comment vous pouvez l'utiliser :
 ```php
-    $ligne = $request->input('ligne', 10);
-    $users = User::paginate($ligne)->withQueryString();
+$ligne = $request->input('ligne', 10);
+$users = User::paginate($ligne)->withQueryString();
 ```
 
 Merci !
