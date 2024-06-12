@@ -1,5 +1,43 @@
-# Mon Projet Laravel
+Voici la version corrigée et améliorée de votre texte :
 
-Voici une image illustrant mon projet :
+---
 
-![LAravel pagination customize template bootstrap 5](./Style1/image1.png)
+# Personnalisation de la pagination dans Laravel
+
+## Style 1
+Voici une illustration de mon projet :
+
+![Template de personnalisation de la pagination Laravel avec Bootstrap 5](./Style1/image1.png)
+
+Pour personnaliser les vues de pagination, vous devez les exporter vers votre répertoire `resources/views/vendor` en utilisant la commande `vendor:publish` :
+
+```shell
+php artisan vendor:publish --tag=laravel-pagination
+```
+
+Si vous souhaitez désigner un fichier différent comme vue de pagination par défaut, vous pouvez utiliser les méthodes `defaultView` et `defaultSimpleView` du paginateur dans la méthode `boot` de votre classe `App\Providers\AppServiceProvider` :
+
+```php
+<?php
+ 
+namespace App\Providers;
+ 
+use Illuminate\Pagination\Paginator;
+use Illuminate\Support\ServiceProvider;
+ 
+class AppServiceProvider extends ServiceProvider
+{
+    /**
+     * Bootstrap any application services.
+     */
+    public function boot(): void
+    {
+        Paginator::defaultView('vendor.pagination.custom-bootstrap-5');
+ 
+        Paginator::defaultSimpleView('vendor.pagination.custom-bootstrap-5');
+    }
+}
+```
+Ensuite, vous pouvez simplement téléverser le fichier `custom-bootstrap-5` dans le dossier **views\vendor\pagination**.
+
+Merci !
