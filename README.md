@@ -34,10 +34,10 @@ class AppServiceProvider extends ServiceProvider
     {
         Paginator::defaultView('vendor.pagination.custom-bootstrap-5');
  
-        Paginator::defaultSimpleView('vendor.pagination.custom-bootstrap-5');
+        Paginator::defaultSimpleView('vendor.pagination.custom-simple-bootstrap-5');
     }
 }
 ```
-Ensuite, vous pouvez simplement téléverser le fichier `custom-bootstrap-5` dans le dossier **views\vendor\pagination**.
+Ensuite, vous pouvez simplement téléverser le fichier `custom-bootstrap-5` et `custom-simple-bootstrap-5` dans le dossier **views\vendor\pagination**.
 
 Merci !
