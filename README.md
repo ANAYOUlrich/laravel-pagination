@@ -38,6 +38,6 @@ class AppServiceProvider extends ServiceProvider
     }
 }
 ```
-Ensuite, vous pouvez simplement téléverser le fichier `custom-bootstrap-5` et `custom-simple-bootstrap-5` dans le dossier **views\vendor\pagination**.
+Ensuite, vous pouvez simplement téléverser le fichier `custom-bootstrap-5` et `custom-simple-bootstrap-5` dans le dossier  `views/vendor/pagination `.
 
 Merci !
