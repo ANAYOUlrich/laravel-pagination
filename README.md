@@ -5,7 +5,7 @@ Voici une illustration de mon projet :
 
 ![Template de personnalisation de la pagination Laravel avec Bootstrap 5](./Style1/image1.png)
 
-## Installation & Utilisation
+## Mise en place & Utilisation
 Pour personnaliser les vues de pagination, vous devez les exporter vers votre répertoire `resources/views/vendor` en utilisant la commande `vendor:publish` :
 
 ```shell
